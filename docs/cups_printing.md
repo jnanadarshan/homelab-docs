@@ -1,4 +1,4 @@
-# How to Install CUPS Print Server on Raspberry Pi
+# How to Install CUPS Print Server on Raspberry Pi and use Ricoh SP111 as a Network Printer
 
 ?> This is a beginer friendly tutorial
 
@@ -38,3 +38,32 @@ Now you can access your CUPS server using any system in your network on Pi's IP 
 In my case I can access the server at
 
 `http://192.168.1.20:631`
+
+
+# Add Ricoh SP111 Printer to CUPS
+
+'''bash
+sudo apt-get install jbigkit-bin
+```
+
+```bash
+sudo apt-get install inotify-tools
+```
+
+```bash
+sudo apt install git
+```
+
+```bash
+sudo git clone https://github.com/droidzone/ricoh-sp100.git
+````
+
+`cd ricoh-sp100`
+
+`sudo cp pstoricohddst-gdi /usr/lib/cups/filter`
+
+`sudo chown root:root /usr/lib/cups/filter/pstoricohddst-gdi`
+
+`sudo apt-get install imagemagick-6.q16`
+
+'sudo systemctl restart cups.service'
