@@ -45,17 +45,11 @@
       nav.app-nav li ul {
         min-width: 100px;
       }
-
-      #carbonads {
-        box-shadow: none !important;
-        width: auto !important;
-      }
     </style>
   </head>
 
   <body>
     <div id="app">Loading ...</div>
-    <script src="//cdn.jsdelivr.net/npm/docsify-plugin-carbon@1/index.js"></script>
     <script>
       // Set html "lang" attribute based on URL
       var lang = location.hash.match(/#\/(de-de|es|ru-ru|zh-cn)\//);
@@ -167,7 +161,6 @@
           },
         },
         plugins: [
-          DocsifyCarbon.create('CEBI6KQE', 'docsifyjsorg'),
           function(hook, vm) {
             hook.beforeEach(function(html) {
               if (/githubusercontent\.com/.test(vm.route.file)) {
