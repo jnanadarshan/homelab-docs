@@ -1,6 +1,7 @@
 - Getting started
 
   - [Quick start](quickstart.md)
+  - [CUPS Print Server](cups_printing.md)
   - [Writing more pages](more-pages.md)
   - [Custom navbar](custom-navbar.md)
   - [Cover page](cover.md)
