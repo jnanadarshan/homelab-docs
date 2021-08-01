@@ -11,7 +11,7 @@ Set `coverpage` to **true**, and create a `_coverpage.md`:
 
 <script>
   window.$docsify = {
-    coverpage: true
+    coverpage: false
   }
 </script>
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
