@@ -47,7 +47,7 @@ There are couple of dependencies that needs to be installed before we can add th
 
 Now head over to the terminal with SSH and run the below commands.
 
-'''bash
+```bash
 sudo apt-get install jbigkit-bin
 ```
 
@@ -69,24 +69,38 @@ I have seen sometimes the old respos are removed, so in the unlikely case the ab
 
 ```bash
 sudo git clone https://github.com/jnanadarshan/ricoh-sp100.git
-````
-Afterdownload, verify that the folder `ricoh-sp100` is there using `ls` command though it is optional.
+```
+
+After download, verify that the folder `ricoh-sp100` is there using `ls` command though it is optional.
 
 Now `cd` into the downloaded repo to copy necessary files to CUPS folder in the Pi.
 
-`cd ricoh-sp100`
+```bash
+cd ricoh-sp100
+```
 
 Use the below command to copy the necessary files to CUPS folder.
-`sudo cp pstoricohddst-gdi /usr/lib/cups/filter`
+
+```bash
+sudo cp pstoricohddst-gdi /usr/lib/cups/filter
+```
 
 Then we need to modiy the permissions before we can use the new PPD or drivers.
-`sudo chown root:root /usr/lib/cups/filter/pstoricohddst-gdi`
+
+```bash
+sudo chown root:root /usr/lib/cups/filter/pstoricohddst-gdi
+```
 
 
 Now at this point everything is complete and you can head over to the CUPS interface to add printer and if your printer is powered on and connected via USB to the Pi you should be able to add it to CUPS. However I saw this issue of printing blank pages which quite some other people have also faced. To fix printing blank pages on Raspbian or Ubuntu you can install the below library and it will start working.
-`sudo apt-get install imagemagick-6.q16`
+
+```bash
+sudo apt-get install imagemagick-6.q16
+```
 
 I suggest you restart the `cups.service` just to make sure all the latest libraries are being used.
-'sudo systemctl restart cups.service'
+```bash
+sudo systemctl restart cups.service
+```
 
 Everything is finished and now you can head over to `192.168.1.20:631` and `Add Printer` where you can see `Ricoh SP111` listed and when you hit add you should also see the `Ricoh SP111 DDST` drivers available already. 
