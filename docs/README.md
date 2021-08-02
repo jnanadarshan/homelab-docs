@@ -1,38 +1,23 @@
-## docsify
+## Homelab Documentation
 
-> A magical documentation site generator.
+> The place to document all things about my learnings regarding my Homelab Setup.
 
 ## What it is
 
-docsify generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as a website. To start using it, all you need to do is create an `index.html` and [deploy it on GitHub Pages](deploy.md).
+My Homelab (here is a great [Subreddit](https://www.reddit.com/r/homelab/)) journey which started with one Raspberry Pi 4 2GB has become more complicated and more powerful over the years. I started with just a SMB share to store my CCTV files and now I have many services like HomeAssistant, openHAB, Plex, Radarr, Sonarr etc. are running from various devices 24x7. Homelab journies are oftern difficult and you have to browse through a lot of documentation before things start to work out. The goal of this documentation website is to just offer one more place for people to get tutorials and help themselves out. 
 
-See the [Quick start](quickstart.md) guide for more details.
+## Services I run
 
-## Features
+- [OpenMediaVault](https://www.openmediavault.org/) - An opensource NAS solution with much more to offer
+- [HomeAssistant](https://www.home-assistant.io/) - A home automation system with power of opensource
+- [openHAB](https://www.openhab.org/) - Another open source home automation system with powerful features
+- [Plex](https://www.plex.tv) - A local media organizer with Netflix like interface
+- more on the way....
 
-- No statically built html files
-- Simple and lightweight
-- Smart full-text search plugin
-- Multiple themes
-- Useful plugin API
-- Emoji support
-- Compatible with IE11
-- Support server-side rendering ([example](https://github.com/docsifyjs/docsify-ssr-demo))
-
-## Examples
-
-Check out the [Showcase](https://github.com/docsifyjs/awesome-docsify#showcase) to see docsify in use.
-
-## Donate
-
-Please consider donating if you think docsify is helpful to you or that my work is valuable. I am happy if you can help me [buy a cup of coffee](https://github.com/QingWei-Li/donate). :heart:
 
 ## Community
 
 Users and the development team are usually in the [Discord server](https://discord.gg/3NwKFyR).
 
-## Special Thanks
-
-_Vercel_ has given us a Pro account.
-
-<a href="https://vercel.com/?utm_source=docsifyjsdocs" target="_blank"><img src="https://cdn.jsdelivr.net/gh/docsifyjs/docsify/docs/_media/vercel_logo.svg" width="100px"></a>
+## Credits
+Documented by Jnanadarshan Nayak
