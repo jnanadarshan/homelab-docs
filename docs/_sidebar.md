@@ -1,6 +1,6 @@
 - Smart Home
 
-  - [openHAB](cups_printing.md)
+  - [openHAB](#)
 
 - Standalone Systems
 

@@ -1,8 +1,8 @@
 # How to Install CUPS Print Server on Raspberry Pi and use Ricoh SP111 as a Network Printer
 
-?> This is a beginer friendly tutorial
+?> This is a beginner friendly tutorial
 
-CUPS is an open-source printing system developed by Apple for UNIX like operating systems. Running CUPS on a Raspberry Pi and attaching a USB printer to the device can make the printer accessible to all the devices within the network, without having any WiFi or Enthernet interface on the printer. I use CUPS to use my ultra-cheap Ricoh SP111 Laser printer as a network printer for my Home.
+CUPS is an open-source printing system developed by Apple for UNIX like operating systems. Running CUPS on a Raspberry Pi and attaching a USB printer to the device can make the printer accessible to all the devices within the network, without having any WiFi or Ethernet interface on the printer. I use CUPS to use my ultra-cheap Ricoh SP111 Laser printer as a network printer for my Home.
 
 Here are the steps.
 
